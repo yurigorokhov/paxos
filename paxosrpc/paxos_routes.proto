@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package paxosrpc;
+
+service PaxosRoutes {
+	rpc ProposeValue (ProposeRequest) returns (ProposeReply) {}
+	rpc AcceptValue (AcceptRequest) returns (AcceptReply) {}
+	rpc Commit (CommitRequest) returns (CommitReply) {}
+}
+
+message ProposeRequest {
+	uint64 ProposalNumber = 1;
+}
+
+message ProposeReply {
+	uint64 HighestProposalNumber = 1;
+	bool   Success = 2;
+	uint64 PreviouslyAcceptedProposalNumber = 3;
+	uint64 PreviouslyAcceptedValue = 4;
+	uint64 MissingValue = 5;
+}
+
+message AcceptRequest {
+	uint64 ProposalNumber = 1;
+	uint64 ProposalValue = 2;
+}
+
+message AcceptReply {
+	bool   Success = 1;
+	uint64 PreviouslyAcceptedNumber = 2;
+}
+
+message CommitRequest {
+	uint64 ProposalNumber = 1;
+	uint64 ProposalValue = 2;
+}
+
+message CommitReply {
+	bool   Success = 1;
+}
