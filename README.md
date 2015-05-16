@@ -30,7 +30,7 @@ for i in 1 2 3 4 5; do
 done
 ```
 
-Valid work consists of integers greater than 0. As you perform requests, the paxos server will print out the the numbers you submitted in an agreed order among the nodes in the following format:
+Valid work consists of integers greater than 0. As you perform requests, the paxos server will print out the numbers you submitted in an agreed order among the nodes in the following format:
 
 ```
 [port]Item: number
