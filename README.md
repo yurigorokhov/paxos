@@ -55,6 +55,7 @@ Valid work consists of integers greater than 0. As you perform requests, the pax
 The paxos algorithm really comes to light when you look at the orders of the individual ports, they should be the same
 
 8000: 1 2 3 1 3 2 1 2 3 1 3 2 1 2 3 1 3 2 1 2 3 1 3
+
 8001: 1 2 3 1 3 2 1 2 3 1 3 2 1 2 3 1 3 2 1 2 3 1 3
 
 
