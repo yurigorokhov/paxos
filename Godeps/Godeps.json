@@ -1,0 +1,41 @@
+{
+	"ImportPath": "paxos",
+	"GoVersion": "go1.4.2",
+	"Packages": [
+		"paxos/server"
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/bradfitz/http2",
+			"Rev": "f8202bc903bda493ebba4aa54922d78430c2c42f"
+		},
+		{
+			"ImportPath": "github.com/golang/glog",
+			"Rev": "44145f04b68cf362d9c4df2182967c2275eaefed"
+		},
+		{
+			"ImportPath": "github.com/golang/protobuf/proto",
+			"Rev": "39e27fc0f226450c58e11eda145b542bc5dff3fe"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6460565bec1e8891e29ff478184c71b9e443ac36"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2",
+			"Rev": "f98d0160877ab4712b906626425ed8b0b320907c"
+		},
+		{
+			"ImportPath": "google.golang.org/cloud/compute/metadata",
+			"Rev": "2f1f05fa5ef92aac6109243f351e01ae3e033402"
+		},
+		{
+			"ImportPath": "google.golang.org/cloud/internal",
+			"Rev": "2f1f05fa5ef92aac6109243f351e01ae3e033402"
+		},
+		{
+			"ImportPath": "google.golang.org/grpc",
+			"Rev": "f5ebd86be717593ab029545492c93ddf8914832b"
+		}
+	]
+}
