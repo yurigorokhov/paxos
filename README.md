@@ -6,14 +6,23 @@ This is a simple implementation of the Paxos (http://en.wikipedia.org/wiki/Paxos
 
 Compilation
 ===========
+
+Install godep executable and make sure it is in your path
+
 ```
-go build paxos/server
+go get github.com/tools/godep
+```
+
+then build
+
+```
+make
 ```
 
 Running
 =======
 ```
-./server -httpports="8000,8001,8002,8003,8004" -rpcports="9000,9001,9002,9003,9004"
+./paxos_server -httpports="8000,8001,8002,8003,8004" -rpcports="9000,9001,9002,9003,9004"
 ```
 
 --httpports is a list of ports where nodes will listen for http requests that represent values that paxos will agree upon
